@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: ecomovequest
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-user-workloads/balejosg-tenant/ecomovequest/ecomovequest@sha256:d4284d15435de17922a264bfd84ae85291aabbe6dfe920a4e88b1fe696cd3776
         name: my-nodejs
         ports:
         - containerPort: 3001
