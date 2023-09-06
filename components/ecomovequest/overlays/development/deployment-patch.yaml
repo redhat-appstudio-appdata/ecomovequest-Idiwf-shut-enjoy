@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ecomovequest
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/balejosg-tenant/ecomovequest/ecomovequest@sha256:d4284d15435de17922a264bfd84ae85291aabbe6dfe920a4e88b1fe696cd3776
+        name: my-nodejs
+        resources: {}
+status: {}
