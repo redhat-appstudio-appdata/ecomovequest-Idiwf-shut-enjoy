@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: ecomovequest
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ecomovequest
+    app.kubernetes.io/part-of: ecomovequest
+  name: ecomovequest
+spec:
+  ports:
+  - name: "3000"
+    port: 3000
+    targetPort: 3000
+  selector:
+    app.kubernetes.io/instance: ecomovequest
+status:
+  loadBalancer: {}
